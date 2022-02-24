@@ -5,6 +5,9 @@
 package Formulario;
 
 import java.util.Random;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.ImageIcon;
 
 /**
  *
@@ -111,9 +114,209 @@ public class frmMain extends javax.swing.JFrame {
     }                                        
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        // TODO add your handling code here:
+        hilo1.stop();
     }                                        
 
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+        hilo1.stop();
+    }  
+    
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+        hilo1.stop();
+    }  
+    
+    
+    public class Hilo1 extends Thread {
+       
+       
+        @Override
+        public void run(){
+            
+            int infinito = 0;
+            while(infinito == 0){
+            {
+                int min = 1;
+		int max = 3;
+		int value = rnd.nextInt(3 + 1) + 1;
+                
+                if(value ==1){
+                ImageIcon icon = new ImageIcon("C:\\Users\\Pablo García\\Documents\\UNIVERSIDAD\\Noveno Semestre\\Sistemas Operativos\\Casino\\src\\Imagenes\\SkeletonKing.png");
+                jLabel2.setIcon(icon);
+                
+            
+                try {
+                    Thread.sleep(75);
+                } catch (InterruptedException ex) {
+                    Logger.getLogger(frmMain.class.getName()).log(Level.SEVERE, null, ex);
+                }
+                
+                
+                }
+                
+                            
+                if(value ==2){
+                ImageIcon icon = new ImageIcon("C:\\Users\\Pablo García\\Documents\\UNIVERSIDAD\\Noveno Semestre\\Sistemas Operativos\\Casino\\src\\Imagenes\\mega_knight.png");
+                jLabel2.setIcon(icon);
+                
+            
+                try {
+                    Thread.sleep(75);
+                } catch (InterruptedException ex) {
+                    Logger.getLogger(frmMain.class.getName()).log(Level.SEVERE, null, ex);
+                }
+                
+                
+                }
+               
+                 if(value ==3){
+                ImageIcon icon = new ImageIcon("C:\\Users\\Pablo García\\Documents\\UNIVERSIDAD\\Noveno Semestre\\Sistemas Operativos\\Casino\\src\\Imagenes\\Ghost.png");
+                jLabel2.setIcon(icon);
+                
+            
+                try {
+                    Thread.sleep(75);
+                } catch (InterruptedException ex) {
+                    Logger.getLogger(frmMain.class.getName()).log(Level.SEVERE, null, ex);
+                }
+                
+                
+                }
+                
+                
+            }
+            
+        }
+
+        
+    }
+    }
+  
+    public class Hilo2 extends Thread {
+       
+       
+        @Override
+        public void run(){
+            
+            int infinito = 0;
+            while(infinito == 0)
+            {
+                int min = 1;
+		int max = 3;
+		int value = rnd.nextInt(3 + 1) + 1;
+                
+            if(value ==1){
+                ImageIcon icon = new ImageIcon("C:\\Users\\Pablo García\\Documents\\UNIVERSIDAD\\Noveno Semestre\\Sistemas Operativos\\Casino\\src\\Imagenes\\Ghost.png");
+                jLabel3.setIcon(icon);
+                
+            
+                try {
+                    Thread.sleep(75);
+                } catch (InterruptedException ex) {
+                    Logger.getLogger(frmMain.class.getName()).log(Level.SEVERE, null, ex);
+                }
+                
+                
+                }
+            
+            if(value ==2){
+                ImageIcon icon = new ImageIcon("C:\\Users\\Pablo García\\Documents\\UNIVERSIDAD\\Noveno Semestre\\Sistemas Operativos\\Casino\\src\\Imagenes\\SkeletonKing.png");
+                jLabel3.setIcon(icon);
+                
+            
+                try {
+                    Thread.sleep(75);
+                } catch (InterruptedException ex) {
+                    Logger.getLogger(frmMain.class.getName()).log(Level.SEVERE, null, ex);
+                }
+                
+                
+                }
+            
+            if(value ==3){
+                ImageIcon icon = new ImageIcon("C:\\Users\\Pablo García\\Documents\\UNIVERSIDAD\\Noveno Semestre\\Sistemas Operativos\\Casino\\src\\Imagenes\\mega_knight.png");
+                jLabel3.setIcon(icon);
+                
+            
+                try {
+                    Thread.sleep(75);
+                } catch (InterruptedException ex) {
+                    Logger.getLogger(frmMain.class.getName()).log(Level.SEVERE, null, ex);
+                }
+                
+                
+                }
+                
+            }
+            
+        }
+
+        
+        }
+    
+    public class Hilo3 extends Thread {
+       
+       
+        @Override
+        public void run(){
+            
+            int infinito = 0;
+            while(infinito == 0)
+            {
+                
+                int min = 1;
+		int max = 3;
+		int value = rnd.nextInt(3 + 1) + 1;
+                
+                
+                if(value ==1){
+                ImageIcon icon = new ImageIcon("C:\\Users\\Pablo García\\Documents\\UNIVERSIDAD\\Noveno Semestre\\Sistemas Operativos\\Casino\\src\\Imagenes\\mega_knight.png");
+                jLabel4.setIcon(icon);
+                
+            
+                try {
+                    Thread.sleep(75);
+                } catch (InterruptedException ex) {
+                    Logger.getLogger(frmMain.class.getName()).log(Level.SEVERE, null, ex);
+                }
+                
+                
+                }
+                
+                if(value ==2){
+                ImageIcon icon = new ImageIcon("C:\\Users\\Pablo García\\Documents\\UNIVERSIDAD\\Noveno Semestre\\Sistemas Operativos\\Casino\\src\\Imagenes\\Ghost.png");
+                jLabel4.setIcon(icon);
+                
+            
+                try {
+                    Thread.sleep(75);
+                } catch (InterruptedException ex) {
+                    Logger.getLogger(frmMain.class.getName()).log(Level.SEVERE, null, ex);
+                }
+                
+                
+                }
+                
+                if(value ==3){
+                ImageIcon icon = new ImageIcon("C:\\Users\\Pablo García\\Documents\\GitHub\\casino-harvus1\\casino-harvus1\\src\\main\\java\\Imagenes\\SkeletonKing.png");
+                jLabel4.setIcon(icon);
+                
+            
+                try {
+                    Thread.sleep(75);
+                } catch (InterruptedException ex) {
+                    Logger.getLogger(frmMain.class.getName()).log(Level.SEVERE, null, ex);
+                }
+                
+                
+                }
+            }
+            
+        }
+
+        
+        }
+     
+    
     /**
      * @param args the command line arguments
      */
